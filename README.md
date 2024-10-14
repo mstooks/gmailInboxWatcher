@@ -56,10 +56,6 @@ Ensure you have the following collections set up in Firestore:
 1. `pushTokens` - This stores push notification tokens for your devices.
 2. `fullNotifications` - This stores the full notification content (subject, plain text, HTML body, etc.) after an email is received.
 
-### Step 5: Test Locally
-
-To test the Lambda locally, you can trigger the function by marking an email as unread in the target Gmail inbox. This will simulate the reception of a new email, allowing the Lambda to process and send the push notification. You can repeatedly mark an email as unread by right-clicking on the email and selecting "Mark as Unread."
-
 ### AWS Lambda Deployment
 
 To deploy this function on AWS Lambda, follow these steps:
