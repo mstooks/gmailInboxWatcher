@@ -70,7 +70,13 @@ To deploy this function on AWS Lambda, follow these steps:
     Compress-Archive -Path .\* -DestinationPath ../gmailwatcher.zip
     ```
 
-2. **Deploy the Lambda Function**:
+3. **Deploy the Lambda Function**:
+    
+    Simple way:
+
+    You can just upload it by hand by going to AWS > Lambda > Create Function (name it and select Node.js 18.x) > upload .zip file
+
+    OR
 
     Use the AWS CLI to create or update the Lambda function:
 
@@ -84,7 +90,6 @@ To deploy this function on AWS Lambda, follow these steps:
     aws lambda update-function-code --function-name GmailWatcher --zip-file fileb://lambda_function.zip
     ```
 
-    Or you can just upload it by hand by going to AWS > Lambda > Create Function (name it and select Node.js 18.x) > upload .zip file
 
 ## Notes
 
